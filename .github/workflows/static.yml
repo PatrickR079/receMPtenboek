@@ -33,9 +33,6 @@ jobs:
         uses: actions/checkout@v4
       - name: Unpack
         run: 7z x build.zip
-      - name: Fix base path for GitHub Pages
-        run: |
-          sed -i 's|="/assets/|="/receMPtenboek/assets/|g' index.html
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
